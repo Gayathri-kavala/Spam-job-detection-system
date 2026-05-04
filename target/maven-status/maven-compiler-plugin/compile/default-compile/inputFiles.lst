@@ -1,0 +1,11 @@
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\analysis\DetectorResult.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\analysis\JobAnalysisEngine.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\analysis\RiskLevel.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\analysis\ScamSignal.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\analysis\SignalCategory.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\FakeJobScamDetectorApplication.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\persistence\JobAnalysis.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\persistence\JobAnalysisRepository.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\web\AnalyzeJobRequest.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\web\JobAnalysisController.java
+C:\Users\gayat\Documents\internship\2026-05-03\you-are-a-senior-full-stack-2\src\main\java\com\scamdetector\web\StatsResponse.java

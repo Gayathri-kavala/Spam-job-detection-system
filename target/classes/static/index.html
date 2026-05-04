@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake Job / Scam Detector</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="app-shell">
+    <section class="topbar">
+        <div>
+            <p class="eyebrow">Employment Safety Intelligence</p>
+            <h1>Fake Job / Scam Detector</h1>
+        </div>
+        <div class="status-pill" id="systemStatus">System ready</div>
+    </section>
+
+    <section class="dashboard" aria-label="Risk dashboard">
+        <div class="metric">
+            <span>Total scans</span>
+            <strong id="totalScans">0</strong>
+        </div>
+        <div class="metric low">
+            <span>Low</span>
+            <strong id="lowRisk">0</strong>
+        </div>
+        <div class="metric medium">
+            <span>Medium</span>
+            <strong id="mediumRisk">0</strong>
+        </div>
+        <div class="metric high">
+            <span>High</span>
+            <strong id="highRisk">0</strong>
+        </div>
+        <div class="metric critical">
+            <span>Critical</span>
+            <strong id="criticalRisk">0</strong>
+        </div>
+    </section>
+
+    <section class="workspace">
+        <form class="panel analyzer" id="analysisForm">
+            <div class="panel-heading">
+                <h2>Analyze Posting</h2>
+                <button type="button" class="ghost-button" id="sampleButton">Load sample</button>
+            </div>
+
+            <label>
+                <span>Job title</span>
+                <input name="title" maxlength="180" placeholder="Remote Data Entry Assistant">
+            </label>
+
+            <label>
+                <span>Company</span>
+                <input name="company" maxlength="180" placeholder="Example Corp">
+            </label>
+
+            <label>
+                <span>Recruiter email</span>
+                <input name="contactEmail" maxlength="220" placeholder="recruiter@example.com">
+            </label>
+
+            <label>
+                <span>Posting URL</span>
+                <input name="jobUrl" maxlength="500" placeholder="https://company.com/careers/job-id">
+            </label>
+
+            <label class="wide">
+                <span>Job description or recruiter message</span>
+                <textarea name="description" maxlength="5000" placeholder="Paste the posting, email, WhatsApp message, or recruiter text here"></textarea>
+            </label>
+
+            <button class="primary-button" type="submit">Analyze risk</button>
+        </form>
+
+        <section class="panel result-panel" aria-live="polite">
+            <div class="panel-heading">
+                <h2>Risk Result</h2>
+                <span class="risk-badge empty" id="riskBadge">Waiting</span>
+            </div>
+            <div class="score-ring" id="scoreRing">
+                <strong id="riskScore">--</strong>
+                <span>risk score</span>
+            </div>
+            <p class="summary" id="summaryText">Paste a job posting to generate an explainable risk assessment.</p>
+            <div>
+                <h3>Signals</h3>
+                <ul class="signal-list" id="signalsList"></ul>
+            </div>
+            <div>
+                <h3>Recommended Actions</h3>
+                <ul class="recommendation-list" id="recommendationsList"></ul>
+            </div>
+        </section>
+    </section>
+
+    <section class="panel history-panel">
+        <div class="panel-heading">
+            <h2>Recent Scans</h2>
+            <button type="button" class="ghost-button" id="refreshButton">Refresh</button>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Company</th>
+                    <th>Risk</th>
+                    <th>Score</th>
+                    <th>Scanned</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="historyBody"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

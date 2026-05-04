@@ -1,0 +1,12 @@
+com\scamdetector\analysis\DetectorResult.class
+com\scamdetector\FakeJobScamDetectorApplication.class
+com\scamdetector\analysis\ScamSignal.class
+com\scamdetector\analysis\JobAnalysisEngine.class
+com\scamdetector\web\StatsResponse.class
+com\scamdetector\analysis\JobAnalysisEngine$1.class
+com\scamdetector\analysis\SignalCategory.class
+com\scamdetector\web\AnalyzeJobRequest.class
+com\scamdetector\persistence\JobAnalysis.class
+com\scamdetector\analysis\RiskLevel.class
+com\scamdetector\persistence\JobAnalysisRepository.class
+com\scamdetector\web\JobAnalysisController.class
